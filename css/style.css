@@ -1,0 +1,494 @@
+@font-face {
+  font-family: bfontbold;
+  src: url(Montserrat-Bold.otf);
+}
+@font-face {
+  font-family: bfont;
+  src: url(Montserrat-Regular.otf);
+}
+
+input[type=password]:focus{outline:none;border-bottom:1px solid #00bc71}
+  input[type=email]:focus{outline:none;border-bottom:1px solid #00bc71}
+  input[type=text]:focus{outline:none;border-bottom:1px solid #00bc71}
+
+.showmap{
+	background-image: url('../img/grap.jpg');
+}
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fff
+}
+.logo{
+    padding-left: 30%;
+}
+.container{
+    width: 100%;
+	padding:2%;
+	vertical-align: middle;
+    display: inline-block;
+}
+.header{
+	background-color: #fff;
+	 border-bottom:  grey 2px solid; 
+	width: 100%;
+	height:15%;
+}
+#main {
+    transition: margin-left .5s;
+  }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color:#336699;
+    display: block;
+    transition: 0.3s;
+    display: inline;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .logout{
+    color:#414141;
+}
+
+.sidebarLinkBlock{
+    padding: 20px 8px 8px 20%;
+  }
+
+  .active {
+    background-color: red;
+    color: white;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: #dedede;
+    padding-top:10px;
+    padding-left: 50px;
+    padding-bottom:10px;
+    margin-top: 10px;
+    margin-left: -25px;
+    text-decoration: none;
+    font-size: 15px;
+    color:#336699;
+  }
+
+  /* Optional: Style the caret down icon */
+  .fa-angle-down {
+    float: right;
+    color:#000;
+    padding-right: 8px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  font-size: 30px;
+  width:15px;
+  margin-left: 50px;
+  color:#fff;
+}
+
+.sidebar_header{
+    background-color: #00cc66;
+    margin-bottom:15px;
+}
+
+.header_TitleContainer{
+    padding-top:55px;
+    padding-bottom:10px;
+    text-align: center;    
+    border-bottom: #fff 1px solid;
+}
+
+.sidebarHeaderTitle{
+    color:white;
+}
+
+.headerSubdiv{
+    padding-left: 20%
+}
+
+.companyName{
+    color:#fff;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 0px
+    /* font-size: 35px;
+  font-family: "Montserrat";
+  font-weight: 700; */
+}
+
+.header_clockContainer{
+  padding-bottom:40px;
+}
+
+.timeStyle{
+  display: inline-block;
+}
+
+.timeTextStyle{
+    font-size: 20px;
+  line-height: 0px;
+  text-align: left;
+  color:white;
+  font-weight: 500
+}
+
+.timeNoteText{
+    font-size: 13px;
+  line-height: 5px;
+  text-align: left;
+  color:white
+}
+ @font-face {
+   font-family: boldfacefont;
+    src: url(../font/Montserrat-Bold.otf);
+    }
+    @font-face {
+        font-family: regular;
+         src: url(../font/Montserrat-Regular.otf);
+         }
+
+header{
+    min-height: 50px;
+    background-color:#f4f4f4;
+    border-bottom:darkgray 2px solid;
+}
+.login{
+    align-self:center;
+}
+.ab_center
+{
+    height:300px;
+    width:300px;
+    position:absolute;
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.button_login{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header a{
+   
+    margin-top: 35px;
+    size: 59px;
+}
+
+/*Button show password*/
+.pass_show{
+    border-color: #fff;
+    box-shadow: none;
+}
+/*input tag*/
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    border-top: #fff 1px solid;
+    border-left: #fff 1px solid;
+    border-right: #fff 1px solid;
+    border-bottom-color: #5cd380;
+    box-sizing: border-box;
+  }
+
+  .password_box{
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+input[type=password], select {
+    width: 90%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-top: #fff 1px solid;
+    border-left: #fff 1px solid;
+    border-right: #fff 1px solid;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    background-position: 10px 10px;
+    
+    box-sizing: border-box;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    border-top: #f4f4f4 1px solid;
+    border-left: #f4f4f4 1px solid;
+    border-bottom-color: #5cd380;
+    box-sizing: border-box;
+  }
+/*footer*/
+
+
+footer a{
+    align-items: center;
+    padding: 0 0 0 0px;
+}
+
+.vertical_banner 
+{  
+    background: white;
+    width: 100%;
+	height:25%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    bottom: 0;
+	
+}
+
+.outside {
+    position: relative;
+    width: 100%;
+    height:520px;
+    background-color: #EEE; /*to make it visible*/
+}
+/*"height: 100px;width: 100%;margin: auto;bottom: 0;padding:10px"*/
+#bottom_link{
+    width: 100%;                         /* added */
+    height:100%;
+    bottom: 0;
+	display: flex;
+	/* border:2px solid; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    
+  /*   
+    margin-top:35px;
+    background-color: #01BB74;
+    border: none;
+	width:80%;
+	height:15%;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+	padding-top: 1%;
+	font-family:bfont;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+	align-self: center */
+	
+}
+
+#bottom_link_login{
+    width: 100%;                         /* added */
+    height:100%;
+    bottom: 0;
+    padding-top: 10%;
+    /* border: #000 solid 1px; */
+	display: flex;
+	/* border:2px solid; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	
+}
+.button_navigate {
+    background-color: #01BB74;
+    border: none;
+	width:80%;
+	height:20%;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+	vertical-align: middle;
+	padding-top: 1.5%;
+	font-family:bfont;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+	align-self: center
+	
+  }
+
+  .button_navigate_login {
+    background-color: #01BB74;
+    border: none;
+	width:100%;
+	height:100%;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+	vertical-align: middle;
+    padding: 2%;
+	font-family:bfont;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+	align-self: center
+	
+  }
+  
+  
+  .aanmelden_navigate{
+	 padding-top: 3%;
+	 font-family:bfont;
+	 font-size: 16px;
+	 text-decoration:underline;
+	 color: #01BB74;
+	 
+  }
+  
+  .card-3 {
+     box-shadow: 0px 10px 5px #E6E5E4, 0px -10px 5px #E6E5E4;
+  }
+  
+
+ .display{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+ 
+ }
+
+ .vertical_bannerWithDetail{
+    background: white;
+    width: 100%;
+	height:50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+ #bottom_link_withDetail{
+    width: 100%;                         /* added */
+    height:100%;
+    bottom: 0;
+	display: flex;
+	/* border:2px solid; */
+	justify-content: center;
+	flex-direction: column;
+}
+
+.batteryboxDetail{
+    padding-left: 10%;
+    flex-direction: column;
+}
+
+ .bottom_link_withDetail_text{
+     line-height: 0px;
+     font-weight: 540
+ }
+
+ .bottom_link_Detail_textUnderline{
+    font-weight: 540;
+    text-decoration: underline;
+ }
+
+ .bottom_link_withDetail_title{
+    line-height: 0px;
+    
+ }
+
+ .batteryContainer{
+     margin-top:10px;
+     
+ }
+ 
+ .batteryText{
+     display: inline;
+     font-size: 12px
+ }
+
+ .batteryNumberText{
+     font-weight: 550;
+     display: inline;
+ }
+
+ .bottomLinkHeader{
+     text-align: right;
+     margin-right: 10%
+ }
+
+ .separator{
+    margin-top:2%;
+    height:2px;
+    background-color: #dedede;
+    margin-left:10%;
+ }
+
+ .bottomLink_closeIcon{
+    
+ }
+
+ .close{
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+ }
+
+ .button_navigate_withDetail{
+    margin-top:35px;
+    background-color: #01BB74;
+    border: none;
+	width:80%;
+	height:15%;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+	padding-top: 1%;
+	font-family:bfont;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+	align-self: center
+ }
+
+ .batteryIcon{
+    padding-left:5px;
+    padding-right:5px;
+    text-align: center
+ }
+
+ .modalSlider{
+    background-color: #dedede;
+    height: 5px;
+    margin-left: 50%;
+    margin-right: 45%
+ }
+
+ .menuIcon{
+     display: inline;
+     text-align: left;
+ }

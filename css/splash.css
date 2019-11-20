@@ -1,0 +1,48 @@
+@font-face {
+  font-family: bfontbold;
+  src: url(Montserrat-Bold.otf);
+}
+@font-face {
+  font-family: bfont;
+  src: url(Montserrat-Regular.otf);
+}
+/*splash screen */
+
+	
+#splashbody{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+                width: 100%;
+                height: 100%;
+                background:#00bc71;
+            }
+
+
+
+.middlesplash {
+	align-items: center;
+	justify-content: center;
+  vertical-align: middle;
+  padding-top:60%;
+  //border: 1px solid #c3c3c3;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+ 
+}
+
+.imgsplashlogo{
+	width:70%;
+	height:70%;
+}
+
+.imgsplashbox{
+	padding-top:5%;
+	width:60%;
+	height:60%;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #fff">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidebar_header">
+            <div class="header_TitleContainer">
+                <img src="./img/menulogo.png" height="80%" width="80%">
+
+            </div>
+            <p class="companyName">
+                Tacco Marijnen
+            </p>
+            <div class="header_clockContainer">
+                <!-- <img src="./img/time_active.png" > -->
+                <svg width="15%" height="15%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 15.05 15.05" style="enable-background:new 0 0 15.05 15.05;" xml:space="preserve">
+    <style type="text/css">
+        .st0{fill:white;}
+    </style>
+    <path id="Shape-7" class="st0" d="M7.53,15.05C3.37,15.05,0,11.69,0,7.53c0-1.99,0.79-3.91,2.2-5.32c2.93-2.94,7.69-2.95,10.63-0.02
+        c0.01,0.01,0.01,0.01,0.02,0.02c2.94,2.93,2.94,7.7,0.01,10.64C11.44,14.26,9.53,15.05,7.53,15.05z M7.53,1.16
+        c-3.52,0-6.37,2.85-6.37,6.37s2.85,6.37,6.37,6.37s6.37-2.85,6.37-6.37C13.89,4.01,11.04,1.16,7.53,1.16z M10.73,10.65L10.73,10.65
+        L6.78,8.28V3.76H7.9v3.95l3.39,1.99L10.73,10.65L10.73,10.65z"/>
+    </svg>
+                <div class="timeStyle">
+                    <p class="timeTextStyle">13:26</p>
+                    <p class="timeNoteText">Powerbank actief</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="sidebarLinkBlock">
+            <div style="display: inline;">
+                <img src="./svg/svgIcons/contact.svg" height="10%" width="10%">
+            </div>
+            <a href="#">Persoonlijke gegevens</a>
+        </div>
+
+        <div class="sidebarLinkBlock">
+            <div style="display: inline;">
+                <img src="./svg/svgIcons/myAcoount.svg" height="10%" width="10%">
+            </div>
+            <a href="#">Mijn account</a>
+        </div>
+
+        <div class="sidebarLinkBlock">
+            <div style="display: inline;">
+                <img src="./svg/svgIcons/faq.svg" height="10%" width="10%">
+            </div>
+            <a href="#">Veel gestelde vragen</a>
+        </div>
+
+        <div class="sidebarLinkBlock">
+            <div style="display: inline;">
+                <img src="./svg/svgIcons/about.svg" height="10%" width="10%">
+            </div>
+            <a href="#" class="dropdown-btn">Over Batterybox
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <div class="dropdown-container">
+                <a class="innerA" style="display: block;padding:5px" href="#">Over ons</a>
+                <a class="innerA" style="display: block;padding:5px" href="#">Voorwaarden</a>
+            </div>
+        </div>
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+        <div class="sidebarLinkBlock">
+            <div style="display: inline;">
+                <img src="./svg/svgIcons/contact&feedback.svg" height="10%" width="10%">
+            </div>
+            <a href="#">Contact & feedback</a>
+        </div>
+
+        <div class="sidebarLinkBlock">
+            <div style="display: inline;">
+                <img src="./svg/svgIcons/logout.svg" height="10%" width="10%">
+            </div>
+            <a class="logout" href="#">uitloggen</a>
+        </div>
+
+    </div>
+
+    <div id="main">
+        <header>
+            <div class="container">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <a style="margin-left: 75px">BatteryBox</a>
+            </div>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "320px";
+                    document.getElementById("main").style.marginLeft = "320px";
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft = "0";
+                    document.body.style.backgroundColor = "white";
+                }
+
+            </script>
+        </header>
+
+        <div class="ab_center">
+            <p class="myAccPageTitle">Persoonlijke gegevens</p>
+
+            <section>
+                <form>
+                    <input type="text" placeholder="De Heer"><br>
+                    <!-- <div class="password_box" style="background-color: white;height:41px;border-bottom: 1px solid #ccc;">
+                        <input style="margin:0px" type="password" placeholder="Enter Password.." id='pass'>
+                        <span class="pass_show" type="button" id="eye">
+                            <img src="./img/icons8-invisible-500.png" width="20" height="20">
+                        </span>
+                    </div> -->
+                    <input type="text" placeholder="Tacco">
+                    <input type="text" placeholder="Marijnen">
+                    <input type="text" placeholder="06-">
+                    <input type="email" placeholder="taco@4onlinegroup.com">
+                    <!-- <div style="width:30%">
+                    <input style="width:50%;padding:12px 5px" style="display: inline;" type="text" placeholder="Dag">
+                    <i style="font-size: 20px" class="fa fa-angle-down"></i>
+                    </div>
+                    <div style="width:30%">
+                            <input style="width:50%;padding:12px 5px" style="display: inline;" type="text" placeholder="Dag">
+                            <i style="font-size: 20px" class="fa fa-angle-down"></i>
+                            </div>
+                            <div style="width:30%">
+                    <input style="width:50%;padding:12px 5px" style="display: inline;" type="text" placeholder="Dag">
+                    <i style="font-size: 20px" class="fa fa-angle-down"></i>
+                    </div> -->
+                    <input style="display: inline;width:30%" type="text" placeholder="Dag">
+                    <input style="display: inline;width:30%" type="text" placeholder="Maand">
+                    <input style="display: inline;width:30%" type="text" placeholder="Jaar">
+                    <button type="submit" class="button_login">
+                            Aanpassingen opslaan
+                    </button>
+                </form>
+
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+       
+		<link rel="stylesheet" href="./css/intro.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+       
+    </head>
+    <body class="introbody" > 
+        <div class="introheaderlogo">
+            <img class="imglogointro" src="./svg/batteryboxlogowhite.svg" >     
+        </div>
+		<div class="sectionintro">
+		<div>
+        <section >
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div  class="mySlides fade swiper-slide margintop" >
+                                <div>
+                                    <h1 class="h1intro" >Hire een titel <br> plaatsen max 2</h1>
+                                    <p class="pintro" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  sed do eiusmod incididunt ut</p>
+                                </div>
+                            </div>
+                                                        
+                            <div class="mySlides fade  swiper-slide margintop">
+                                <div >
+                                    <h1 class="h1intro" ></h1>
+                                    <p class="pintro" ></p>
+                                </div>
+                            </div>
+                                        
+                            <div  class="mySlides fade  swiper-slide margintop">
+                                <div >
+                                    <h1 class="h1intro"></h1>
+                                    <p class="pintro" ></p>
+                                </div>
+                            </div>
+                                        
+                            <div  class="mySlides fade  swiper-slide margintop">
+                                <div >
+                                    <h1 class="h1intro"></h1>
+                                    <p class="pintro" ></p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+		</div>
+		<div>
+		<footer id='footer' >
+                <div class="divfooterintro">
+                    <div >
+                        <div class="swiper-pagination" >
+                    </div> 
+                    <div class="footerlinkintro">
+                            <a class="hrefintro" href="start.html">Overslaan</a>
+                    </div> 
+                </div>
+            </footer>
+		</div>
+        </div>
+            
+                    <!-- Initialize Swiper -->
+                    <script type="text/javascript">
+                        var swiper = new Swiper('.swiper-container', {
+                            spaceBetween: 40,
+                            centeredSlides: true,
+                            autoplay: false,
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev'
+                            }
+                        });
+                        $(".swiper-container").mouseenter(function () {
+                            swiper.autoplay.stop();
+                        });
+                    </script>
+                </div> 
+    </body>
+</html>

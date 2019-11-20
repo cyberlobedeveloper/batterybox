@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "320px";
+                    document.getElementById("main").style.marginLeft = "320px";
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft = "0";
+                    document.body.style.backgroundColor = "white";
+                }
+
+            </script>
+
+    </head>
+    <body class="showmap"> 
+        <div class="header">
+                <div class="container">
+                    <span class="menuIcon" onclick="openNav()">
+                        <img src="./svg/hamburger.svg" height='50%' width='6%'>
+                    </span>
+                    <span class="logo">
+                            <img src="./svg/batteryboxlogo.svg" width='30%'> 
+                    </span>
+                      
+                </div>      
+            </div>
+        </header>  
+       <footer>
+            <div class='vertical_bannerWithDetail card-3'>
+                <div id='bottom_link_withDetail'> 
+
+                    <div class="bottomLinkHeader">
+                            <div class="modalSlider"></div>
+                        <span class="bottomLink_closeIcon">
+                                <span class="close">&times;</span>
+                        </span>
+                        <div class="separator"></div>
+                    </div>
+                    <div Align="Left" class="batteryboxDetail">
+                        <h4 class="bottom_link_withDetail_title"> Doloris</h4>
+                        <p class="bottom_link_withDetail_text">Professor Gimbreewlaan 27</p>
+                        <p class="bottom_link_withDetail_text">5038 CB Gasselterboerveenschemond</p>
+                        <p class="bottom_link_Detail_textUnderline">Route</p>
+                        
+                        <div class="batteryContainer">
+                            <p class="batteryNumberText">4</p>
+                            <span class="batteryIcon">
+                                <img src="./svg/batteryicon.svg" height='1%' width='1%'>
+                            </span>
+                            <p class="batteryText">Beshikbare powerbanks</p>
+                        </div>
+                        <div class="batteryContainer">
+                            <p class="batteryNumberText">6</p>
+                            <span class="batteryIcon">
+                                <img src="./svg/emptydocksicon.svg" height='1%' width='1%'>
+                            </span>
+                            <p class="batteryText">Lege laadpunten</p> 
+                        </div>
+                    </div>
+                      <a href="login.html" class="button_navigate_withDetail" >
+                            <img src="./svg/qrcode.svg" height='60%' width='5%'>
+                            Scan QR Code
+                        </a>
+                </div>   
+            </div>
+       </footer>
+       <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+            <div class="sidebar_header">
+                <div class="header_TitleContainer">
+                    <img src="./img/logo.png" height="60%" width="60%">
+    
+                </div>
+    
+                <div class="headerSubdiv">
+                    <p class="companyName">
+                        Tacco Marijnen
+                    </p>
+                    <div class="header_clockContainer">
+                        <!-- <img src="./img/time_active.png" > -->
+                        <svg width="15%" height="15%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.05 15.05" style="enable-background:new 0 0 15.05 15.05;"
+                            xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: white;
+                                }
+                            </style>
+                            <path id="Shape-7" class="st0" d="M7.53,15.05C3.37,15.05,0,11.69,0,7.53c0-1.99,0.79-3.91,2.2-5.32c2.93-2.94,7.69-2.95,10.63-0.02
+                c0.01,0.01,0.01,0.01,0.02,0.02c2.94,2.93,2.94,7.7,0.01,10.64C11.44,14.26,9.53,15.05,7.53,15.05z M7.53,1.16
+                c-3.52,0-6.37,2.85-6.37,6.37s2.85,6.37,6.37,6.37s6.37-2.85,6.37-6.37C13.89,4.01,11.04,1.16,7.53,1.16z M10.73,10.65L10.73,10.65
+                L6.78,8.28V3.76H7.9v3.95l3.39,1.99L10.73,10.65L10.73,10.65z" />
+                        </svg>
+                        <div class="timeStyle">
+                            <p class="timeTextStyle">13:26</p>
+                            <p class="timeNoteText">Powerbank actief</p>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+    
+            <div class="sidebarLinkBlock">
+                <div style="display: inline;">
+                    <img src="./svg/svgIcons/contact.svg" height="10%" width="10%">
+                </div>
+                <a href="#">Persoonlijke gegevens</a>
+            </div>
+    
+            <div class="sidebarLinkBlock">
+                <div style="display: inline;">
+                    <img class="headerlogo" src="./svg/svgIcons/myAcoount.svg" height="10%" width="10%">
+                </div>
+                <a href="#">Mijn account</a>
+            </div>
+    
+            <div class="sidebarLinkBlock">
+                <div style="display: inline;">
+                    <img src="./svg/faq.svg" height="10%" width="10%">
+                </div>
+                <a href="#">Veel gestelde vragen</a>
+            </div>
+    
+            <div class="sidebarLinkBlock">
+                <div style="display: inline;">
+                    <img src="./svg/svgIcons/about.svg" height="10%" width="10%">
+                </div>
+                <a href="#" class="dropdown-btn">Over Batterybox
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <div class="dropdown-container">
+                    <a class="innerA" style="display: block;padding:5px" href="#">Over ons</a>
+                    <a class="innerA" style="display: block;padding:5px" href="#">Voorwaarden</a>
+                </div>
+            </div>
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+    
+                for (i = 0; i < dropdown.length; i++) {
+                    dropdown[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+    
+            <div class="sidebarLinkBlock">
+                <div style="display: inline;">
+                    <img src="./svg/contact&feedback.svg" height="10%" width="10%">
+                </div>
+                <a href="#">Contact & feedback</a>
+            </div>
+    
+            <div class="sidebarLinkBlock">
+                <div style="display: inline;">
+                    <img src="./svg/svgIcons/logout.svg" height="10%" width="10%">
+                </div>
+                <a class="logout" href="#">uitloggen</a>
+            </div>
+    
+        </div>
+    </body>
+</html>

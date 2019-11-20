@@ -1,0 +1,251 @@
+@font-face {
+  font-family: bfontbold;
+  src: url(Montserrat-Bold.otf);
+}
+@font-face {
+  font-family: bfont;
+  src: url(Montserrat-Regular.otf);
+}
+
+.introbody{
+	background:#00bc71;
+}
+
+.introheaderlogo{
+	display: flex;
+	justify-content: center;
+	padding-top:4%;
+	
+}
+.imglogointro{
+	width:50%;
+	height:50%;
+}
+.swiper-container
+            {
+                width: 100%;
+                height: 85%;
+                position: fixed;
+                opacity: 0.85;
+                bottom:10;
+            }
+			
+* {box-sizing: border-box}
+            
+            .mySlides {display: none; align:center;}
+            img {vertical-align: middle;}
+                
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                vertical-align:bottom;
+                position: relative;
+                margin: auto;
+            }
+                
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                
+            }
+                
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+                
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+                
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+                
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+                
+            /* The dots/bullets/indicators */
+           
+                
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+                
+                /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+                
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+                
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+                
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .prev, .next,.text {font-size: 11px}
+            }
+			
+			
+			 .container {
+                display: flex;           /* establish flex container */
+                flex-direction: column;  /* make main axis vertical */
+                justify-content: center; /* center items vertically, in this case */
+                align-items: center;     /* center items horizontally, in this case */
+                height: 300px;
+              
+            }
+
+ #footer {
+    
+    width:100%;
+	padding-top:10%;
+	padding-bottom:10%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+ }
+ .divfooterintro{
+	 display: flex;
+	 justify-content:center; 
+	 align-items: center;
+	
+ }
+
+
+ .footerlinkintro{
+	 display: flex;
+	 justify-content:center; 
+	 align-items: center;
+	  padding-top:30%;
+	  font-family:bfont;
+	  font-size:15px;
+	  
+ }
+ .hrefintro{
+	 text-decoration: none ;
+	 color:white;
+ }
+
+            .box {
+                width: 300px;
+                margin: 5px;
+                text-align: center;     /* will center text in <p>, which is not a flex item */
+            }
+            .footerdiv{
+                display: flex;
+                justify-content:center;
+                align-items: center; 
+                flex-direction: column;
+                height: 100%;
+            }
+           
+            /* for slider*/
+            
+
+            .swiper-slide
+            {
+                text-align: center;
+                
+                background: #00bc71; /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            section{
+                text-align:center;
+                height: 30%;
+            }
+            .margintop{
+                margin-top: 75px;
+            }
+           
+
+            .swiper-pagination-bullet {
+	        padding: 1px 7px;
+            border-radius: 100px;
+            width: auto;
+            margin: 5px;
+	        height: 22px;
+	        text-align: center;
+	        line-height: 15px;
+	        font-size: 12px;
+	        color:#000;
+	        opacity: 1;
+	        background: rgba(0,0,0,0.2);
+            }
+            .swiper-pagination-bullet-active {
+	        color:#fff;
+	        background:#fff;
+            } 
+
+.h1intro{
+	align-items: center;
+	padding-left:10%;
+	padding-right:10%;
+	font-family:bfont;
+	font-size:25px;
+	line-height:25px;
+}
+.pintro{
+	color:white;
+	padding-left:10%;
+	padding-right:10%;
+	font-family:bfont;
+	font-size:15px;
+	line-height:17px;
+}
+.swiper-wrapper{
+	//border:red 1px solid;
+	padding-top:60%;
+	
+}
+.sectionintro{
+	display: flex;
+    flex-direction: row;
+}
